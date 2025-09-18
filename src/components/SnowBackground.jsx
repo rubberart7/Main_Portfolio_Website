@@ -2,69 +2,70 @@ import { useEffect, useRef } from "react";
 
 export const SnowBackground = () => {
   const canvasRef = useRef(null);
-  const snowflakes = useRef([]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      initSnowflakes();
-    };
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
 
-    const initSnowflakes = () => {
-      snowflakes.current = [];
-      const numFlakes = Math.floor((canvas.width * canvas.height) / 8000);
-      for (let i = 0; i < numFlakes; i++) {
-        snowflakes.current.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          radius: Math.random() * 3 + 1,
-          speedY: Math.random() * 1 + 0.5,
-          speedX: Math.random() * 1 - 0.5, // horizontal drift for wind
-          opacity: Math.random() * 0.5 + 0.3,
-        });
-      }
-    };
+    const snowflakes = [];
+    const snowflakeCount = 100;
 
-    const draw = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < snowflakeCount; i++) {
+      snowflakes.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 3 + 1,
+        speedY: Math.random() * 1 + 0.5,
+        speedX: (Math.random() - 0.5) * 0.5,
+        opacity: Math.random() * 0.5 + 0.3
+      });
+    }
+
+    let animationFrameId;
+
+    const drawSnow = () => {
+      ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = "white";
-      ctx.beginPath();
-      snowflakes.current.forEach(flake => {
-        ctx.globalAlpha = flake.opacity;
-        ctx.moveTo(flake.x, flake.y);
-        ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
-      });
-      ctx.fill();
-      ctx.globalAlpha = 1;
-      update();
-      requestAnimationFrame(draw);
-    };
 
-    const update = () => {
-      snowflakes.current.forEach(flake => {
+      snowflakes.forEach(flake => {
         flake.y += flake.speedY;
-        flake.x += flake.speedX; // wind effect
-        if (flake.y > canvas.height) flake.y = 0;
-        if (flake.x > canvas.width) flake.x = 0;
-        if (flake.x < 0) flake.x = canvas.width;
+        flake.x += flake.speedX;
+
+        if (flake.y > height) flake.y = -flake.radius;
+        if (flake.x > width) flake.x = 0;
+        if (flake.x < 0) flake.x = width;
+
+        ctx.beginPath();
+        ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${flake.opacity})`;
+        ctx.fill();
       });
+
+      animationFrameId = requestAnimationFrame(drawSnow);
     };
 
-    resizeCanvas();
-    window.addEventListener("resize", resizeCanvas);
-    draw();
+    drawSnow();
 
-    return () => window.removeEventListener("resize", resizeCanvas);
+    const handleResize = () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-0"
+      className="fixed inset-0 w-full h-full pointer-events-none z-0"
     />
   );
 };
