@@ -9,7 +9,7 @@ export const WorkExperience = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Drexel Internship */}
+          
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-full bg-primary/10">
@@ -44,7 +44,7 @@ export const WorkExperience = () => {
             </div>
           </div>
 
-          {/* Project Experience Example */}
+          
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-full bg-primary/10">

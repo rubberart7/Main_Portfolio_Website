@@ -6,10 +6,10 @@ import {
   Terminal,
   Globe,
   GitBranch,
-  Server,
+  
   Database,
   Boxes,
-  Settings,
+  
   Layout,
   Box,
   Feather,
@@ -19,7 +19,7 @@ import {
   Laptop,
 } from "lucide-react";
 
-// map skill names to icons
+
 const icons = {
   Python: Code2,
   TypeScript: Code2,
@@ -51,9 +51,9 @@ const icons = {
   Prisma: Boxes,
 };
 
-// your actual skills list
+
 const skills = [
-  // Languages
+  
   { name: "Python", category: "languages" },
   { name: "TypeScript", category: "languages" },
   { name: "JavaScript", category: "languages" },
@@ -64,7 +64,7 @@ const skills = [
   { name: "HTML", category: "languages" },
   { name: "CSS", category: "languages" },
 
-  // Developer Tools
+  
   { name: "Git", category: "tools" },
   { name: "GitHub", category: "tools" },
   { name: "GitLab", category: "tools" },
@@ -72,7 +72,7 @@ const skills = [
   { name: "VS Code", category: "tools" },
   { name: "IntelliJ", category: "tools" },
 
-  // Libraries/Frameworks
+  
   { name: "Next.js", category: "frameworks" },
   { name: "React", category: "frameworks" },
   { name: "Express", category: "frameworks" },
@@ -80,7 +80,7 @@ const skills = [
   { name: "Flask", category: "frameworks" },
   { name: "Tailwind CSS", category: "frameworks" },
 
-  // Databases/ORM
+  
   { name: "PostgreSQL", category: "databases" },
   { name: "SQLite", category: "databases" },
   { name: "SQLAlchemy", category: "databases" },
@@ -103,7 +103,7 @@ export const SkillsSection = () => {
           My <span className="text-primary"> Skills</span>
         </h2>
 
-        {/* Category filter buttons */}
+        
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (
             <button
@@ -121,7 +121,7 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Skills grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSkills.map((skill, key) => {
             const Icon = icons[skill.name] || Feather;

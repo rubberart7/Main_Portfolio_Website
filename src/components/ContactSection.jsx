@@ -14,7 +14,7 @@ export const ContactSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-          {/* Email */}
+          
           <div className="p-6 bg-card rounded-lg shadow-xs hover:shadow-md transition-shadow duration-300">
             <div className="flex justify-center mb-4">
               <div className="p-3 rounded-full bg-primary/10">
@@ -30,7 +30,7 @@ export const ContactSection = () => {
             </a>
           </div>
 
-          {/* Phone */}
+          
           <div className="p-6 bg-card rounded-lg shadow-xs hover:shadow-md transition-shadow duration-300">
             <div className="flex justify-center mb-4">
               <div className="p-3 rounded-full bg-primary/10">
@@ -47,7 +47,7 @@ export const ContactSection = () => {
           </div>
         </div>
 
-        {/* Social Links */}
+        
         <div>
           <h4 className="font-medium text-lg mb-4">Connect With Me</h4>
           <div className="flex justify-center space-x-6 text-primary">
