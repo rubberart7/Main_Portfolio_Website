@@ -12,8 +12,8 @@ const projects = [
       "A full-stack platform for browsing game deals, managing libraries, and receiving AI-powered recommendations. Built with Next.js, React, TypeScript, Express.js, Tailwind CSS, and PostgreSQL.",
     image: gameDexCover,
     tags: ["Next.js", "React", "Express", "TypeScript", "TailwindCSS", "PostgreSQL"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://game-dex-t4vi.vercel.app/main",
+    githubUrl: "https://github.com/rubberart7/GameDex",
   },
   {
     id: 2,
@@ -22,8 +22,8 @@ const projects = [
       "A full-stack platform providing AI-driven resume feedback and career resources. Features a Google Gemini-powered analyzer that delivers personalized scoring, actionable tips, and ATS compatibility checks.",
     image: internSightCover,
     tags: ["Next.js", "React", "Express", "TypeScript", "TailwindCSS", "PostgreSQL"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://intern-sight.vercel.app/",
+    githubUrl: "https://github.com/rubberart7/InternSight",
   },
   {
     id: 3,
@@ -32,8 +32,8 @@ const projects = [
       "A travel itinerary planner built with Flask and SQLite. Integrates OpenCage, Foursquare, and Google Maps APIs to deliver dynamic trip recommendations, multi-modal routing, and saved itineraries.",
     image: wanderPlannerCover,
     tags: ["Flask", "Python", "JavaScript", "HTML", "CSS", "SQLite"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://wanderplanner.onrender.com/",
+    githubUrl: "https://github.com/rubberart7/WanderPlanner?tab=readme-ov-file",
   },
 ];
 
@@ -105,7 +105,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/rubberart7"
           >
             Check My Github <ArrowRight size={16} />
           </a>
