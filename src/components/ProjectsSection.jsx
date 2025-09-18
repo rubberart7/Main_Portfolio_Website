@@ -3,34 +3,36 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "GameDex",
+    description:
+      "A full-stack platform for browsing game deals, managing libraries, and receiving AI-powered recommendations. Built with Next.js, React, TypeScript, Express.js, Tailwind CSS, and PostgreSQL.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    tags: ["Next.js", "React", "Express", "TypeScript", "TailwindCSS", "PostgreSQL"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "InternSight",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "A full-stack platform providing AI-driven resume feedback and career resources. Features a Google Gemini-powered analyzer that delivers personalized scoring, actionable tips, and ATS compatibility checks.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    tags: ["Next.js", "React", "Express", "TypeScript", "TailwindCSS", "PostgreSQL"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "WanderPlanner",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "A travel itinerary planner built with Flask and SQLite. Integrates OpenCage, Foursquare, and Google Maps APIs to deliver dynamic trip recommendations, multi-modal routing, and saved itineraries.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["Flask", "Python", "JavaScript", "HTML", "CSS", "SQLite"],
     demoUrl: "#",
     githubUrl: "#",
   },
 ];
+
 
 export const ProjectsSection = () => {
   return (
