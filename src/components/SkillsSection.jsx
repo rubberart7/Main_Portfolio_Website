@@ -66,11 +66,9 @@ const skills = [
 
   
   { name: "Git", category: "tools" },
-  { name: "GitHub", category: "tools" },
-  { name: "GitLab", category: "tools" },
-  { name: "Postman", category: "tools" },
-  { name: "VS Code", category: "tools" },
-  { name: "IntelliJ", category: "tools" },
+  { name: "Postman", category: "tools"},
+  { name: "Supabase", category: "tools"},
+  
 
   
   { name: "Next.js", category: "frameworks" },

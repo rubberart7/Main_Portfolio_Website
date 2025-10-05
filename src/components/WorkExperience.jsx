@@ -17,7 +17,7 @@ export const WorkExperience = () => {
               </div>
               <div className="text-left">
                 <h4 className="font-semibold text-lg">
-                  AI & Video Technology Research Intern
+                  AI Research Co-Op
                 </h4>
                 <p className="text-sm text-muted-foreground">
                   Drexel University College of Computing and Informatics
@@ -27,17 +27,19 @@ export const WorkExperience = () => {
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1">
                   <li>
-                    Researched and synthesized cutting-edge AI developments into
-                    practical educational resources for Professor Reza
-                    Moradinezhad’s AI-Atelier.
+                   Pioneered the launch of the AI-Atelier research lab, setting the strategic direction for its educational resources
                   </li>
                   <li>
-                    Designed and developed hands-on courses on Generative AI and
-                    AI-powered application development.
+                    Researched and synthesized cutting-edge AI developments and video and sound restoration algorithms, translating
+                    complex technical concepts into accessible learning materials
                   </li>
                   <li>
-                    Facilitated weekly meetings and reviewed content for quality
-                    and consistency.
+                    Designed and developed hands-on courses on Generative AI and AI-powered application development, integrating
+                    practical exercises with tools such as Hugging Face, Google Gemini, and Python
+                  </li>
+                  <li>
+                    Reviewed the content of 20+ team members, provided constructive feedback, and facilitated 50+ meetings to maintain
+                    quality, consistency, and alignment with lab objectives
                   </li>
                 </ul>
               </div>

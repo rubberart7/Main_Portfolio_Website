@@ -5,6 +5,7 @@ export const AboutSection = () => {
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         
+        
         <div className="mb-16 text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
             About <span className="text-primary">Me</span>
@@ -12,17 +13,25 @@ export const AboutSection = () => {
           <h3 className="text-2xl font-semibold">
             Full-Stack Developer & Problem Solver
           </h3>
+
+          
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            I build full-stack applications that combine elegant design with scalable backends. My projects include AI-powered resume analyzers, game deal platforms, and travel planners integrating multiple APIs.
+            I'm a Computer Science student at Drexel University passionate about building scalable, 
+            AI-powered, and user-focused applications. My experience spans full-stack development and 
+            research, where I helped launch the AI-Atelier lab and developed educational resources 
+            on Generative AI.
           </p>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            Skilled in Python, TypeScript, React, Next.js, Flask, Express, and PostgreSQL, I enjoy creating solutions that are both practical and performant, while continuously learning new technologies.
+            I’ve built full-stack platforms using tools such as 
+            Next.js, React, Flask, Express, and PostgreSQL, integrating features like intelligent recommendations, 
+            resume analysis, and secure authentication. I enjoy combining creativity with technical problem-solving and I am eager to contribute to impactful projects where innovation and collaboration drive success.
           </p>
 
+          
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
             <a href="#contact" className="cosmic-button">Get In Touch</a>
             <a
-              href=""
+              href="/public/assets/main-resume.pdf"
               className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
             >
               Download Resume
@@ -30,12 +39,11 @@ export const AboutSection = () => {
           </div>
         </div>
 
-        
+       
         <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center">
-          Work <span className="text-primary">Experience</span>
+          <span className="text-primary">Experience</span>
         </h3>
 
-        
         <div className="grid grid-cols-1 gap-6">
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
@@ -44,7 +52,7 @@ export const AboutSection = () => {
               </div>
               <div className="text-left">
                 <h4 className="font-semibold text-lg">
-                  AI and Video Technology Research Intern
+                  AI Research Co-Op
                 </h4>
                 <p className="text-sm text-muted-foreground">
                   Drexel University College of Computing and Informatics
@@ -54,19 +62,26 @@ export const AboutSection = () => {
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground text-sm space-y-2">
                   <li>
-                    Researched and synthesized cutting-edge AI developments into practical educational resources for Professor Reza Moradinezhad’s research lab, AI-Atelier, translating complex technical concepts into accessible learning materials
+                    Pioneered the launch of the AI-Atelier research lab, setting the strategic direction for its educational resources.
                   </li>
                   <li>
-                    Designed and developed hands-on courses on Generative AI and AI-powered application development, integrating practical exercises with tools such as Hugging Face, Google Gemini, and Python
+                    Researched and synthesized cutting-edge AI developments and video and sound restoration algorithms, 
+                    translating complex technical concepts into accessible learning materials.
                   </li>
                   <li>
-                    Reviewed team-generated content, provided constructive feedback, and facilitated weekly meetings to maintain quality, consistency, and alignment with lab objectives
+                    Designed and developed hands-on courses on Generative AI and AI-powered application development, 
+                    integrating practical exercises with tools such as Hugging Face, Google Gemini, and Python.
+                  </li>
+                  <li>
+                    Reviewed the content of 20+ team members, provided constructive feedback, and facilitated 50+ meetings 
+                    to maintain quality, consistency, and alignment with lab objectives.
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
