@@ -9,7 +9,7 @@ export const ContactSection = () => {
         </h2>
 
         <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">
-          I'm open to internships and research opportunities where I can contribute to meaningful projects, learn from experienced teams, and grow my skills. 
+          I'm open to co-ops, internships and research opportunities where I can contribute to meaningful projects, learn from experienced teams, and grow my skills. 
           Feel free to reach out to discuss potential roles or collaborations!
         </p>
 
