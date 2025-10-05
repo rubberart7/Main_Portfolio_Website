@@ -16,15 +16,14 @@ export const AboutSection = () => {
 
           
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            I'm a Computer Science student at Drexel University passionate about building scalable, 
-            AI-powered, and user-focused applications. My experience spans full-stack development and 
-            research, where I helped launch the AI-Atelier lab and developed educational resources 
-            on Generative AI.
+            I am a Computer Science student with a strong interest in software engineering, AI development, data science, IT solutions, and other areas of technology. 
+            My experience includes a research co-op at Drexel University’s College of Computing and Informatics, where I contributed to launching the AI-Atelier research lab, 
+            developed educational resources on generative AI, and collaborated with a team to design hands-on courses. 
           </p>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             I’ve built full-stack platforms using tools such as 
             Next.js, React, Flask, Express, and PostgreSQL, integrating features like intelligent recommendations, 
-            resume analysis, and secure authentication. I enjoy combining creativity with technical problem-solving and I am eager to contribute to impactful projects where innovation and collaboration drive success.
+            resume analysis, and secure authentication. I enjoy combining creativity with technical problem-solving and am eager to contribute to innovative and high-impact projects across diverse areas of technology.
           </p>
 
           

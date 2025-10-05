@@ -6,10 +6,8 @@ import {
   Terminal,
   Globe,
   GitBranch,
-  
   Database,
   Boxes,
-  
   Layout,
   Box,
   Feather,
@@ -17,8 +15,8 @@ import {
   Palette,
   ClipboardCheck,
   Laptop,
+  Cpu,
 } from "lucide-react";
-
 
 const icons = {
   Python: Code2,
@@ -30,30 +28,29 @@ const icons = {
   Bash: Terminal,
   HTML: Globe,
   CSS: Globe,
-
   Git: GitBranch,
   GitHub: GitBranch,
   GitLab: GitBranch,
   Postman: ClipboardCheck,
   "VS Code": Laptop,
   IntelliJ: Laptop,
-
   "Next.js": Layout,
   React: Layout,
   Express: Box,
   "Node.js": Box,
   Flask: FlaskConical,
   "Tailwind CSS": Palette,
-
   PostgreSQL: Database,
   SQLite: Database,
   SQLAlchemy: Boxes,
   Prisma: Boxes,
+  Windows: Cpu,
+  Linux: Cpu,
+  macOS: Cpu,
+  iOS: Cpu,
 };
 
-
 const skills = [
-  
   { name: "Python", category: "languages" },
   { name: "TypeScript", category: "languages" },
   { name: "JavaScript", category: "languages" },
@@ -64,13 +61,10 @@ const skills = [
   { name: "HTML", category: "languages" },
   { name: "CSS", category: "languages" },
 
-  
   { name: "Git", category: "tools" },
-  { name: "Postman", category: "tools"},
-  { name: "Supabase", category: "tools"},
-  
+  { name: "Postman", category: "tools" },
+  { name: "Supabase", category: "tools" },
 
-  
   { name: "Next.js", category: "frameworks" },
   { name: "React", category: "frameworks" },
   { name: "Express", category: "frameworks" },
@@ -78,14 +72,18 @@ const skills = [
   { name: "Flask", category: "frameworks" },
   { name: "Tailwind CSS", category: "frameworks" },
 
-  
   { name: "PostgreSQL", category: "databases" },
   { name: "SQLite", category: "databases" },
   { name: "SQLAlchemy", category: "databases" },
   { name: "Prisma", category: "databases" },
+
+  { name: "Windows", category: "os" },
+  { name: "Linux", category: "os" },
+  { name: "macOS", category: "os" },
+  { name: "iOS", category: "os" },
 ];
 
-const categories = ["all", "languages", "frameworks", "databases", "tools"];
+const categories = ["all", "languages", "frameworks", "databases", "tools", "os"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -101,7 +99,6 @@ export const SkillsSection = () => {
           My <span className="text-primary"> Skills</span>
         </h2>
 
-        
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (
             <button
@@ -119,7 +116,6 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSkills.map((skill, key) => {
             const Icon = icons[skill.name] || Feather;
@@ -129,9 +125,7 @@ export const SkillsSection = () => {
                 className="bg-card p-6 rounded-lg shadow-xs card-hover flex flex-col items-center justify-center gap-3"
               >
                 <Icon className="w-8 h-8 text-primary" />
-                <h3 className="font-semibold text-lg text-center">
-                  {skill.name}
-                </h3>
+                <h3 className="font-semibold text-lg text-center">{skill.name}</h3>
               </div>
             );
           })}

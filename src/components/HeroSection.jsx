@@ -21,8 +21,8 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I'm a Computer Science student at Drexel University who enjoys building full-stack web applications. 
-            I build intuitive interfaces and powerful backends, delivering applications that are scalable, maintainable, and enjoyable to use.
+           I’m a Computer Science student at Drexel University with interests in software engineering, IT, data science, and other areas of technology. 
+           I enjoy building creative and practical solutions while exploring different ways technology can make an impact.
 
           </p>
 
