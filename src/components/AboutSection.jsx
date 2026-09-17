@@ -1,4 +1,5 @@
 import aiResearchCoopBg from "../assets/images/drexel-cci-logo.jpg";
+import webstaurantBg from "../assets/images/webstaurant-bg-image.jpg";
 
 export const AboutSection = () => {
   return (
@@ -42,6 +43,42 @@ export const AboutSection = () => {
         </h3>
 
         <div className="grid grid-cols-1 gap-6">
+          <div className="card-hover overflow-hidden rounded-lg relative min-h-[250px] border border-border">
+            <img 
+              src={webstaurantBg} 
+              alt="WebstaurantStore Logo" 
+              className="absolute inset-0 w-full h-full object-cover z-0"
+            />
+
+            <div className="absolute inset-0 bg-black/80 z-10" />
+
+            <div className="relative z-20 p-6 h-full text-left">
+              <h4 className="font-semibold text-lg text-white">
+                QA Automation Engineer Co-Op
+              </h4>
+              <p className="text-sm text-gray-200">
+                WebstaurantStore
+              </p>
+              <p className="text-xs text-gray-300 mb-4">
+                Mar 2026 – Sep 2026 | Remote
+              </p>
+              <ul className="list-disc list-inside text-gray-200 text-sm space-y-2">
+                <li>
+                  Developed and maintained 500+ automated tests in C# covering end-to-end tracking, shipping, vendor management, and order processing workflows for a high-volume platform.
+                </li>
+                <li>
+                  Built modular, reusable automation test suites in C# and .NET using a custom Selenium-based framework to improve test maintainability and expand regression coverage.
+                </li>
+                <li>
+                  Validated end-to-end application integrity across UI, API, and database layers utilizing SQL/MSSQL, Swagger/OpenAPI contract checks, and backend data verification.
+                </li>
+                <li>
+                  Collaborated with cross-functional teams in Azure DevOps to triage defects, link automated test coverage to user stories, and verify fixes for reliable product releases.
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="card-hover overflow-hidden rounded-lg relative min-h-[250px] border border-border">
             <img 
               src={aiResearchCoopBg} 
