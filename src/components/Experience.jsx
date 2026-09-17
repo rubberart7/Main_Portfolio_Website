@@ -1,12 +1,12 @@
 import aiResearchCoopBg from "../assets/images/drexel-cci-logo.jpg";
 import webstaurantBg from "../assets/images/webstaurant-bg-image.jpg";
 
-export const WorkExperience = () => {
+export const Experience = () => {
   return (
     <section id="experience" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Work <span className="text-primary">Experience</span>
+          <span className="text-primary">Experience</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
