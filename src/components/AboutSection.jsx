@@ -16,9 +16,9 @@ export const AboutSection = () => {
 
           
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            I am a Computer Science student with a strong interest in software engineering, AI development, data science, IT solutions, and other areas of technology. 
-            My experience includes a research co-op at Drexel University’s College of Computing and Informatics, where I contributed to launching the AI-Atelier research lab, 
-            developed educational resources on generative AI, and collaborated with a team to design hands-on courses. 
+            I’m a Computer Science student at Drexel University focused on full-stack web development, enterprise QA automation, and applied AI. 
+            My background involves building full stack web applications, complemented by enterprise experience engineering C# test automation for high-volume backend and 
+            web platforms.
           </p>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             I’ve built full-stack platforms using tools such as 
