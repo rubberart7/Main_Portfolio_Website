@@ -12,14 +12,14 @@ export const AboutSection = () => {
 
           <p className="text-muted-foreground max-w-3xl mx-auto">
             I am a Computer Science student at Drexel University with experience spanning full-stack personal web development, 
-            enterprise QA automation, and applied AI research. 
+            enterprise QA automation, and AI research. 
           </p>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             My professional background includes a QA Automation Co-Op at WebstaurantStore, 
             where I built end-to-end C# and .NET automated test suites for high-volume platforms, as well as an AI Research Co-Op at Drexel, 
             where I helped establish the AI-Atelier research lab and designed generative AI course material.
             Outside of my co-ops, I build and deploy full-stack applications using Next.js, React, Express, and PostgreSQL, 
-            incorporating Google Gemini API integrations for features like resume analysis and personalized recommendations. 
+            incorporating API integrations for features like resume analysis and personalized recommendations. 
             I thrive on combining robust testing and clean architecture to build reliable, performant software solutions.
           </p>
 

@@ -22,7 +22,7 @@ export const HeroSection = () => {
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
            I’m a Computer Science student at Drexel University focused on full-stack web development, enterprise QA automation, and applied AI. 
-            My background involves building full stack web applications, complemented by enterprise experience engineering C# test automation for high-volume backend and 
+            My background involves building full stack web applications, complemented by enterprise experience engineering C# test automation suites for high-volume backend and 
             web platforms.
           </p>
 
