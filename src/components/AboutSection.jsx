@@ -25,12 +25,12 @@ export const AboutSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
             <a href="#contact" className="cosmic-button">Get In Touch</a>
-            <a
-              href="/assets/main-resume.pdf" download="main-resume.pdf"
+            <button
+              onClick={() => window.open('/assets/main-resume.pdf')}
               className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
             >
-              Download Resume
-            </a>
+            View Resume
+          </button>
           </div>
         </div>
       </div>
