@@ -37,6 +37,7 @@ const icons = {
 
   ".NET": Layers,
   "Selenium WebDriver": CheckSquare,
+  JUnit: CheckSquare,
   "Next.js": Layout,
   React: Layout,
   Express: Box,
@@ -93,6 +94,7 @@ const skills = [
 
   { name: ".NET", category: "frameworks" },
   { name: "Selenium WebDriver", category: "frameworks" },
+  { name: "JUnit", category: "frameworks" },
   { name: "Next.js", category: "frameworks" },
   { name: "React", category: "frameworks" },
   { name: "Express", category: "frameworks" },
